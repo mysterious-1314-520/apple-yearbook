@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "school": "南山中学",
+    "className": "高三（7）班",
+    "gradYear": 2026,
+    "motto": "青春不散场，未来皆可期",
+    "preface": "三年前，我们带着青涩与憧憬走进这间教室；三年后，我们即将背起行囊奔赴山海。\n\n这本同学录收录了我们一起走过的清晨与黄昏——军训场上的口号、运动会上的呐喊、晚自习后的星空，还有那些写在课桌上、藏在心底的话。\n\n愿我们出走半生，归来仍是少年。",
+    "prefaceAuthor": "班长 林悦 · 班主任 陈老师"
+  },
+  "campus": [
+    {
+      "id": "c1",
+      "title": "晨光中的教学楼",
+      "desc": "每天清晨七点，琅琅书声从三楼第三间教室传出。",
+      "gradient": "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)",
+      "icon": "🏫"
+    },
+    {
+      "id": "c2",
+      "title": "图书馆的午后",
+      "desc": "靠窗第三排的座位，是我们高考前的\"专属包厢\"。",
+      "gradient": "linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%)",
+      "icon": "📚"
+    },
+    {
+      "id": "c3",
+      "title": "操场与天空",
+      "desc": "红色跑道圈住了三年的奔跑，也圈住了整片晚霞。",
+      "gradient": "linear-gradient(135deg, #fddb92 0%, #d1fdff 100%)",
+      "icon": "🌅"
+    },
+    {
+      "id": "c4",
+      "title": "林荫校道",
+      "desc": "两排香樟树下，走过无数次迟到的脚步和放学的笑声。",
+      "gradient": "linear-gradient(135deg, #cfd9df 0%, #e2ebf0 100%)",
+      "icon": "🌳"
+    }
+  ],
+  "moments": [
+    {
+      "id": "m1",
+      "title": "军训汇演",
+      "date": "2023年9月",
+      "desc": "烈日下的正步与军歌，是我们共同的第一课。",
+      "tag": "军训"
+    },
+    {
+      "id": "m2",
+      "title": "秋季运动会",
+      "date": "2024年10月",
+      "desc": "4×100 米接力反超夺冠，全班冲上跑道拥抱。",
+      "tag": "运动会"
+    },
+    {
+      "id": "m3",
+      "title": "元旦晚会",
+      "date": "2024年12月",
+      "desc": "教室后墙的黑板报与投影，照亮了那一夜的歌声。",
+      "tag": "晚会"
+    },
+    {
+      "id": "m4",
+      "title": "百日誓师",
+      "date": "2025年2月",
+      "desc": "倒计时牌翻到 100，全班的誓言震响整个楼层。",
+      "tag": "誓师"
+    },
+    {
+      "id": "m5",
+      "title": "毕业典礼",
+      "date": "2026年6月",
+      "desc": "拨穗、合影、拥抱，镜头定格了最好的我们。",
+      "tag": "毕业"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "t1",
+      "name": "陈静",
+      "subject": "班主任 · 语文",
+      "message": "愿你们永远保有阅读的耐心与表达的勇气，人生这篇大文章，你们会写得比谁都精彩。",
+      "initial": "陈"
+    },
+    {
+      "id": "t2",
+      "name": "李昊",
+      "subject": "数学",
+      "message": "解题要找最优路径，人生也是。遇到难题别慌，先画图，再求解。",
+      "initial": "李"
+    },
+    {
+      "id": "t3",
+      "name": "王琳",
+      "subject": "英语",
+      "message": "Keep your curiosity open to the world. 世界很大，去说、去看、去经历。",
+      "initial": "王"
+    },
+    {
+      "id": "t4",
+      "name": "赵鹏",
+      "subject": "物理",
+      "message": "力的作用是相互的——你为梦想付出的每一分努力，都会以加速度回馈给你。",
+      "initial": "赵"
+    }
+  ],
+  "students": [
+    {
+      "id": "s1",
+      "name": "林悦",
+      "initial": "林",
+      "constellation": "天秤座",
+      "phone": "138****2345",
+      "email": "linyue@example.com",
+      "hobbies": "钢琴、辩论、徒步",
+      "specialty": "校辩论队队长",
+      "message": "谢谢你们包容我三年的唠叨。班会课上说过的每一句\"最后一次\"，原来都是真的。",
+      "plan": "保送至复旦大学新闻学院",
+      "avatarGradient": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+    },
+    {
+      "id": "s2",
+      "name": "周子航",
+      "initial": "周",
+      "constellation": "天蝎座",
+      "phone": "139****8801",
+      "email": "zhouzh@example.com",
+      "hobbies": "篮球、编程、科幻小说",
+      "specialty": "市信息学竞赛一等奖",
+      "message": "球场上的每一次传球我都记得。等我们夺冠的那天，一定要再约一场。",
+      "plan": "清华大学计算机科学与技术系",
+      "avatarGradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"
+    },
+    {
+      "id": "s3",
+      "name": "苏晚晴",
+      "initial": "苏",
+      "constellation": "双鱼座",
+      "phone": "137****6677",
+      "email": "suwanqing@example.com",
+      "hobbies": "绘画、摄影、手账",
+      "specialty": "校美术社社长",
+      "message": "我把大家的笑脸都画进了同一幅画里，挂在心里最亮的地方。",
+      "plan": "中国美术学院 视觉传达设计",
+      "avatarGradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"
+    },
+    {
+      "id": "s4",
+      "name": "许一舟",
+      "initial": "许",
+      "constellation": "摩羯座",
+      "phone": "136****3399",
+      "email": "xuyizhou@example.com",
+      "hobbies": "吉他、长跑、天文观测",
+      "specialty": "校园歌手大赛冠军",
+      "message": "晚自习后一起看星星的日子，是我高中最安静的幸福。",
+      "plan": "南京大学天文与空间科学学院",
+      "avatarGradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)"
+    },
+    {
+      "id": "s5",
+      "name": "陈思羽",
+      "initial": "陈",
+      "constellation": "巨蟹座",
+      "phone": "135****1122",
+      "email": "chensiyu@example.com",
+      "hobbies": "排球、烘焙、志愿服务",
+      "specialty": "校青年志愿者协会骨干",
+      "message": "记得吗？运动会那天下雨，我们共撑一把伞冲过终点。",
+      "plan": "中山大学公共卫生学院",
+      "avatarGradient": "linear-gradient(135deg, #fa709a 0%, #fee140 100%)"
+    },
+    {
+      "id": "s6",
+      "name": "高明远",
+      "initial": "高",
+      "constellation": "狮子座",
+      "phone": "134****5566",
+      "email": "gaomy@example.com",
+      "hobbies": "足球、历史、模联",
+      "specialty": "校模拟联合国最佳代表",
+      "message": "教室后排的笑声不会散场，它会一直在那里等我们回来。",
+      "plan": "武汉大学法学院",
+      "avatarGradient": "linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)"
+    }
+  ],
+  "gallery": [
+    {
+      "id": "g1",
+      "title": "毕业全家福",
+      "type": "集体照",
+      "desc": "全班 52 人 + 全体任课老师，摄于校园香樟道。",
+      "gradient": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+    },
+    {
+      "id": "g2",
+      "title": "小组纪念照",
+      "type": "小组照",
+      "desc": "六年小组的最后合影，桌上的试卷还摊开着。",
+      "gradient": "linear-gradient(135deg, #f6d365 0%, #fda085 100%)"
+    },
+    {
+      "id": "g3",
+      "title": "同桌二人",
+      "type": "双人照",
+      "desc": "三年同桌，一支笔借了 1068 次。",
+      "gradient": "linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%)"
+    },
+    {
+      "id": "g4",
+      "title": "宿舍夜话",
+      "type": "生活照",
+      "desc": "熄灯后的走廊灯，与说不完的悄悄话。",
+      "gradient": "linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%)"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg1",
+      "name": "周子航",
+      "to": "全班同学",
+      "content": "三年很短，短到还没来得及说完就散场；情谊很长，长到一辈子都走不到尽头。",
+      "createdAt": "2026-06-28T10:00:00.000Z"
+    },
+    {
+      "id": "msg2",
+      "name": "苏晚晴",
+      "to": "林悦",
+      "content": "谢谢你总在我画不下去的时候说\"再坚持一下\"。毕业快乐，未来的插画师见！",
+      "createdAt": "2026-06-28T11:30:00.000Z"
+    },
+    {
+      "id": "msg3",
+      "name": "陈思羽",
+      "to": "七班全体",
+      "content": "愿我们都能成为自己想成为的人，在各自的城市里闪闪发光。",
+      "createdAt": "2026-06-29T09:15:00.000Z"
+    }
+  ]
+}

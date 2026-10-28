@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>同学录 · 南山中学高三（7）班</title>
+  <meta name="description" content="Apple 风格毕业同学录" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+
+  <div id="app">
+    <!-- 1. 封面 -->
+    <header class="cover" id="cover">
+      <div class="cover-glow"></div>
+      <div class="cover-inner">
+        <p class="cover-eyebrow" id="coverSchool">南山中学</p>
+        <h1 class="cover-title">
+          <span class="grad-text" id="coverClass">高三（7）班</span>
+        </h1>
+        <p class="cover-sub">Class of <span id="coverYear">2026</span></p>
+        <p class="cover-motto" id="coverMotto">青春不散场，未来皆可期</p>
+        <div class="cover-scroll">
+          <span>向下滚动</span>
+          <div class="chevron"></div>
+        </div>
+      </div>
+      <div class="cover-back">
+        <span>THE END · 毕业快乐</span>
+      </div>
+    </header>
+
+    <!-- 2. 目录页 -->
+    <nav class="toc section" id="toc">
+      <div class="section-head">
+        <p class="eyebrow">Contents</p>
+        <h2>目录</h2>
+      </div>
+      <ol class="toc-list">
+        <li><a href="#preface"><span class="toc-num">01</span><span class="toc-name">卷首语</span><span class="toc-desc">写在毕业之前的话</span></a></li>
+        <li><a href="#campus"><span class="toc-num">02</span><span class="toc-name">校园生活记录</span><span class="toc-desc">校园风光 · 流金岁月</span></a></li>
+        <li><a href="#teachers"><span class="toc-num">03</span><span class="toc-name">师生风采</span><span class="toc-desc">教师寄语 · 学生代表</span></a></li>
+        <li><a href="#profiles"><span class="toc-num">04</span><span class="toc-name">个人资料页</span><span class="toc-desc">我们的档案与赠言</span></a></li>
+        <li><a href="#gallery"><span class="toc-num">05</span><span class="toc-name">合影与签名</span><span class="toc-desc">集体照 · 留言区</span></a></li>
+      </ol>
+    </nav>
+
+    <!-- 3. 卷首语 -->
+    <section class="section preface" id="preface">
+      <div class="section-head">
+        <p class="eyebrow">Foreword</p>
+        <h2>卷首语</h2>
+      </div>
+      <blockquote class="preface-card">
+        <p id="prefaceText" class="preface-text"></p>
+        <footer id="prefaceAuthor"></footer>
+      </blockquote>
+    </section>
+
+    <!-- 4. 校园生活记录 -->
+    <section class="section" id="campus">
+      <div class="section-head">
+        <p class="eyebrow">Campus Life</p>
+        <h2>校园生活记录</h2>
+      </div>
+
+      <h3 class="sub-title">校园风光</h3>
+      <div class="grid grid-4" id="campusGrid"></div>
+
+      <h3 class="sub-title">流金岁月</h3>
+      <div class="timeline" id="momentList"></div>
+    </section>
+
+    <!-- 5. 师生风采 -->
+    <section class="section" id="teachers">
+      <div class="section-head">
+        <p class="eyebrow">Faculty &amp; Students</p>
+        <h2>师生风采</h2>
+      </div>
+
+      <h3 class="sub-title">教师寄语</h3>
+      <div class="grid grid-2" id="teacherGrid"></div>
+
+      <h3 class="sub-title">学生代表</h3>
+      <div class="grid grid-3" id="studentGrid"></div>
+    </section>
+
+    <!-- 6. 个人资料页 -->
+    <section class="section" id="profiles">
+      <div class="section-head">
+        <p class="eyebrow">Profiles</p>
+        <h2>个人资料页</h2>
+        <p class="section-desc">点击卡片查看完整档案，可编辑自己的毕业感言与未来规划。</p>
+      </div>
+      <div class="grid grid-3" id="profileGrid"></div>
+    </section>
+
+    <!-- 7. 合影与签名 -->
+    <section class="section" id="gallery">
+      <div class="section-head">
+        <p class="eyebrow">Photos &amp; Signatures</p>
+        <h2>合影与签名</h2>
+      </div>
+
+      <div class="grid grid-2" id="galleryGrid"></div>
+
+      <h3 class="sub-title">留言区</h3>
+      <form class="msg-form card" id="msgForm">
+        <div class="form-row">
+          <input type="text" id="msgName" placeholder="你的名字" maxlength="40" required />
+          <input type="text" id="msgTo" placeholder="想对谁说（可留空）" maxlength="40" />
+        </div>
+        <textarea id="msgContent" placeholder="写下你的祝福或回忆片段…" maxlength="500" rows="3" required></textarea>
+        <button type="submit" class="btn-primary" id="msgSubmit">签名留念</button>
+      </form>
+      <div class="msg-list" id="msgList"></div>
+    </section>
+
+    <footer class="page-footer">
+      <p id="footerText">© 2026 南山中学 高三（7）班 · 同学录</p>
+      <p class="footer-dim">Designed with Apple-style aesthetics</p>
+    </footer>
+  </div>
+
+  <!-- Apple 风格悬浮底栏 -->
+  <nav class="dock" id="dock" aria-label="页面导航">
+    <a href="#cover" class="dock-item" data-target="cover" title="封面">
+      <svg viewBox="0 0 24 24"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-5v-6h-4v6H5a1 1 0 0 1-1-1z"/></svg>
+      <span>封面</span>
+    </a>
+    <a href="#toc" class="dock-item" data-target="toc" title="目录">
+      <svg viewBox="0 0 24 24"><path d="M5 6h14M5 12h14M5 18h9" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+      <span>目录</span>
+    </a>
+    <a href="#campus" class="dock-item" data-target="campus" title="校园">
+      <svg viewBox="0 0 24 24"><path d="M4 20V9l8-5 8 5v11h-6v-6h-4v6z"/></svg>
+      <span>校园</span>
+    </a>
+    <a href="#teachers" class="dock-item" data-target="teachers" title="师生">
+      <svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3.5 19c.6-3 2.9-4.5 5.5-4.5s4.9 1.5 5.5 4.5"/><circle cx="17" cy="9" r="2.4"/><path d="M15 14.6c2.5-.4 4.8 1 5.5 4.4"/></svg>
+      <span>师生</span>
+    </a>
+    <a href="#profiles" class="dock-item" data-target="profiles" title="资料">
+      <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10.5" r="2.4"/><path d="M8 17c.8-2 2.3-3 4-3s3.2 1 4 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <span>资料</span>
+    </a>
+    <a href="#gallery" class="dock-item" data-target="gallery" title="签名">
+      <svg viewBox="0 0 24 24"><path d="M4 18c3 0 3-8 6-8s3 6 5 6 2-3 5-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M4 21h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity=".5"/></svg>
+      <span>签名</span>
+    </a>
+  </nav>
+
+  <!-- 学生档案弹窗 -->
+  <div class="modal-mask" id="modalMask" hidden>
+    <div class="modal" role="dialog" aria-modal="true">
+      <button class="modal-close" id="modalClose" aria-label="关闭">&times;</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

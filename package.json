@@ -1,0 +1,12 @@
+{
+  "name": "apple-yearbook",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Apple 风格毕业同学录 — Flask + Vue 3",
+  "scripts": {
+    "dev:backend": "python3 backend/app.py",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "start": "python3 backend/app.py"
+  }
+}
